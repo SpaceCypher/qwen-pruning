@@ -12,7 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("model", type=Path)
     args = parser.parse_args()
-    root = Path(__file__).resolve().parent
+    root = Path.cwd()
     records = [json.loads(line) for line in (root / "restoration.jsonl").read_text().splitlines()]
     target = next(row for row in records if row["name"] == "targeted")
     broken = next(row for row in records if row["name"] == "norm-4" and row["split"] == "test")

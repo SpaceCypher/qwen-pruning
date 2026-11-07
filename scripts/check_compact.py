@@ -13,7 +13,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("original", type=Path)
     args = parser.parse_args()
-    root = Path(__file__).resolve().parent
+    root = Path.cwd()
     cases = dataset(44, 40, 51, 90)
     with (root / "compact-check.jsonl").open("x") as output:
         for name, model in [("original", args.original), ("norm", root / "norm.gguf"), ("random", root / "random.gguf")]:

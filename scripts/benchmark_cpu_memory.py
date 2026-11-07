@@ -1,4 +1,5 @@
 """Compare original and physically pruned models on fixed CPU workloads."""
+import argparse
 import json
 from pathlib import Path
 import subprocess
@@ -57,14 +58,28 @@ def generate(prompt, tokens):
 
 
 def main():
-    root = Path("/var/tmp/qwen-pruning")
-    model, = Path("/var/tmp").glob("qwen-models.*/Qwen3.5-4B-Q4_K_M.gguf")
-    binary = Path.home() / "llama.cpp/build/bin/llama-server"
-    with (root / "benchmark.jsonl").open("x") as output:
-        for variant, path in [("original", model), ("norm", root / "norm.gguf"), ("random", root / "random.gguf")]:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--small-batch", action="store_true")
+    parser.add_argument("model", type=Path)
+    parser.add_argument("server", type=Path)
+    args = parser.parse_args()
+    root = Path.cwd()
+    model = args.model.resolve()
+    binary = args.server.resolve()
+    q2 = root / "cpu-q2_0.gguf"
+    variants = [
+            ("q4-default", model, []), ("q4-no-repack", model, ["--no-repack"]),
+            ("q2-default", q2, []), ("q2-no-repack", q2, ["--no-repack"]),
+    ]
+    filename = "cpu-memory.jsonl"
+    if args.small_batch:
+        variants = [("q4-low-batch", model, ["--no-repack", "--batch-size", "64", "--ubatch-size", "32"])]
+        filename = "cpu-small-batch.jsonl"
+    with (root / filename).open("x") as output:
+        for variant, path, flags in variants:
             with (root / f"{variant}.log").open("w") as log, subprocess.Popen([
                 str(binary), "--model", str(path), "--gpu-layers", "0", "--threads", "4",
-                "--ctx-size", "512", "--parallel", "1", "--host", "127.0.0.1", "--port", "8083",
+                "--ctx-size", "512", "--parallel", "1", "--host", "127.0.0.1", "--port", "8083", *flags,
             ], stdout=log, stderr=log) as server:
                 try:
                     for _ in range(60):
@@ -78,6 +93,23 @@ def main():
                     else:
                         raise RuntimeError(f"{variant} readiness timeout")
 
+                    def memory():
+                        proc = Path(f"/proc/{server.pid}")
+                        values = {}
+                        for file, keys in [
+                            ("smaps_rollup", {"Rss", "Pss", "Pss_Anon", "Pss_File"}),
+                            ("status", {"VmHWM"}),
+                        ]:
+                            for line in (proc / file).read_text().splitlines():
+                                name, _, value = line.partition(":")
+                                if name in keys:
+                                    values[name] = int(value.split()[0])
+                        return values
+
+                    print(json.dumps(dict(variant=variant, category="ready",
+                                          bytes=path.stat().st_size, memory_kib=memory())),
+                          file=output, flush=True)
+
                     for category, cases in CASES.items():
                         for prompt, expected in cases:
                             result = generate("Answer with only the shortest correct answer. " + prompt, 12)
@@ -90,7 +122,7 @@ def main():
                         rss = next(line.split()[1] for line in Path(f"/proc/{server.pid}/status")
                                    .read_text().splitlines() if line.startswith("VmRSS:"))
                         print(json.dumps(dict(variant=variant, category="performance",
-                                              rss_kib=int(rss), bytes=path.stat().st_size,
+                                              rss_kib=int(rss), memory_kib=memory(), bytes=path.stat().st_size,
                                               timings=result["timings"])), file=output, flush=True)
                 finally:
                     if server.poll() is None:

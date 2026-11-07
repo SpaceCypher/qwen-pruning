@@ -1,4 +1,5 @@
 """Plot the block ablation and restoration results."""
+import argparse
 import json
 from pathlib import Path
 
@@ -6,7 +7,12 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    root = Path(__file__).resolve().parent
+    repo = Path(__file__).resolve().parents[1]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--data-dir", type=Path, default=repo / "data")
+    parser.add_argument("--output", type=Path, default=repo / "figures/restoration.png")
+    args = parser.parse_args()
+    root = args.data_dir
     rows = [json.loads(line) for line in (root / "restoration.jsonl").read_text().splitlines()]
     matched = root / "matched-test.jsonl"
     if matched.exists():
@@ -42,7 +48,7 @@ def main():
                  title=title, ylabel="Digit accuracy (%)", ylim=(0, 105))
     for axis in axes:
         axis.grid(axis="y", alpha=0.2)
-    fig.savefig(root / "restoration.png", dpi=180)
+    fig.savefig(args.output, dpi=180)
 
 
 if __name__ == "__main__":

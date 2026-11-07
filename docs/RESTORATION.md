@@ -10,21 +10,23 @@ The screening procedure compares lowest down-projection norm, earliest block ind
 
 ## Reproduce
 
-Build the evaluator against the existing llama.cpp checkout and run from an experiment directory containing these scripts, the norm manifest, and the norm ranking. Point the model argument at the original GGUF.
+Build the evaluator against the existing llama.cpp checkout and run from a fresh run directory containing the norm manifest and the norm ranking. Use the absolute paths for `REPO`, `LLAMA_CPP`, `RUN`, and `MODEL` from the [README](../README.md).
 
 ```bash
-cd ~/llama.cpp
-c++ -std=c++17 -O2 -Iinclude -Iggml/include /path/to/qwen-pruning/ablate.cpp \
+mkdir -p "$RUN"
+cp "$REPO/data/norm.json" "$REPO/data/norm-ranking.json" "$RUN/"
+cd "$LLAMA_CPP"
+c++ -std=c++17 -O2 -Iinclude -Iggml/include "$REPO/src/ablate.cpp" \
   -Lbuild/bin -Wl,-rpath,"$PWD/build/bin" -lllama -lggml-base \
-  -o /path/to/qwen-pruning/ablate
-cd /path/to/qwen-pruning
+  -o "$RUN/ablate"
+cd "$RUN"
 cp ablate ablate-trace
-python3 restoration.py "$MODEL" --dev 16 --test 40
-PYTHONPATH="$HOME/llama.cpp/gguf-py" OPENBLAS_NUM_THREADS=1 python3 inspect_blocks.py "$MODEL"
-python3 check_compact.py "$MODEL"
-python3 restoration.py "$MODEL" --dev 16 --test 40 --followup
-python3 restoration.py "$MODEL" --dev 16 --test 40 --matched-test
-python3 plot_restoration.py
+python3 "$REPO/scripts/restoration.py" "$MODEL" --dev 16 --test 40
+PYTHONPATH="$LLAMA_CPP/gguf-py" OPENBLAS_NUM_THREADS=1 python3 "$REPO/scripts/inspect_blocks.py" "$MODEL"
+python3 "$REPO/scripts/check_compact.py" "$MODEL"
+python3 "$REPO/scripts/restoration.py" "$MODEL" --dev 16 --test 40 --followup
+python3 "$REPO/scripts/restoration.py" "$MODEL" --dev 16 --test 40 --matched-test
+python3 "$REPO/scripts/plot_restoration.py" --data-dir "$RUN" --output "$RUN/restoration.png"
 ```
 
 The compact check expects the original smoke test's `norm.gguf` and `random.gguf`. The inspector requires NumPy and the plotter requires Matplotlib. The runners create fresh JSONL files and refuse to overwrite prior results.

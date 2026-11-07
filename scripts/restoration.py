@@ -32,7 +32,7 @@ def main():
     parser.add_argument("--followup", action="store_true")
     parser.add_argument("--matched-test", action="store_true")
     args = parser.parse_args()
-    root = Path(__file__).resolve().parent
+    root = Path.cwd()
     manifest = json.loads((root / "norm.json").read_text())
     removed = [sorted(set(range(36)) - set(manifest["kept_blocks"][str(i)])) for i in range(32)]
     ranking = json.loads((root / "norm-ranking.json").read_text())
