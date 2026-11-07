@@ -1,0 +1,112 @@
+{"variant": "q4-default", "category": "ready", "bytes": 2740937888, "memory_kib": {"Rss": 4185716, "Pss": 4181706, "Pss_Anon": 1502680, "Pss_File": 2679026, "VmHWM": 4185716}}
+{"variant": "q4-default", "category": "math", "prompt": "What is 17 times 19?", "expected": "323", "answer": "323"}
+{"variant": "q4-default", "category": "math", "prompt": "What is 28 times 16?", "expected": "448", "answer": "448"}
+{"variant": "q4-default", "category": "math", "prompt": "What is 144 divided by 12?", "expected": "12", "answer": "12"}
+{"variant": "q4-default", "category": "math", "prompt": "What is 15 percent of 240?", "expected": "36", "answer": "36"}
+{"variant": "q4-default", "category": "math", "prompt": "What is the next term in 2, 6, 18, 54?", "expected": "162", "answer": "162"}
+{"variant": "q4-default", "category": "math", "prompt": "If x + 7 = 21, what is x?", "expected": "14", "answer": "14"}
+{"variant": "q4-default", "category": "code", "prompt": "In Python, what does len([1, 2, 3]) return?", "expected": "3", "answer": "3"}
+{"variant": "q4-default", "category": "code", "prompt": "In Python, what does 'abc'[::-1] return?", "expected": "cba", "answer": "cba"}
+{"variant": "q4-default", "category": "code", "prompt": "In Python, what does sum(range(5)) return?", "expected": "10", "answer": "10"}
+{"variant": "q4-default", "category": "code", "prompt": "In Python, what does sorted([3, 1, 2])[0] return?", "expected": "1", "answer": "1"}
+{"variant": "q4-default", "category": "code", "prompt": "In JavaScript, what does typeof null return?", "expected": "object", "answer": "\"object\""}
+{"variant": "q4-default", "category": "code", "prompt": "In Python, what does 17 % 5 return?", "expected": "2", "answer": "2"}
+{"variant": "q4-default", "category": "facts", "prompt": "What is the capital of Kenya?", "expected": "Nairobi", "answer": "Nairobi"}
+{"variant": "q4-default", "category": "facts", "prompt": "What is the chemical symbol for sodium?", "expected": "Na", "answer": "Na"}
+{"variant": "q4-default", "category": "facts", "prompt": "What planet is closest to the Sun?", "expected": "Mercury", "answer": "Mercury"}
+{"variant": "q4-default", "category": "facts", "prompt": "What organ pumps blood around the human body?", "expected": "heart", "answer": "Heart"}
+{"variant": "q4-default", "category": "facts", "prompt": "What is the largest ocean on Earth?", "expected": "Pacific", "answer": "Pacific Ocean"}
+{"variant": "q4-default", "category": "facts", "prompt": "What gas do plants absorb during photosynthesis?", "expected": "carbon dioxide", "answer": "Carbon dioxide"}
+{"variant": "q4-default", "category": "multilingual", "prompt": "¿Cuál es la capital de Francia? Responde en español.", "expected": "París", "answer": "París"}
+{"variant": "q4-default", "category": "multilingual", "prompt": "Wie heißt die Hauptstadt von Deutschland? Antworte auf Deutsch.", "expected": "Berlin", "answer": "Berlin"}
+{"variant": "q4-default", "category": "multilingual", "prompt": "Qual è la capitale d'Italia? Rispondi in italiano.", "expected": "Roma", "answer": "Roma"}
+{"variant": "q4-default", "category": "multilingual", "prompt": "भारत की राजधानी क्या है? हिंदी में उत्तर दें।", "expected": "नई दिल्ली", "answer": "नई दिल्ली"}
+{"variant": "q4-default", "category": "multilingual", "prompt": "日本の首都はどこですか？日本語で答えてください。", "expected": "東京", "answer": "東京"}
+{"variant": "q4-default", "category": "multilingual", "prompt": "Quelle est la capitale de la Belgique ? Réponds en français.", "expected": "Bruxelles", "answer": "Bruxelles"}
+{"variant": "q4-default", "category": "performance", "rss_kib": 6335784, "memory_kib": {"Rss": 6335784, "Pss": 6331774, "Pss_Anon": 3653244, "Pss_File": 2678530, "VmHWM": 6335784}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 353.019, "prompt_per_token_ms": 13.577653846153847, "prompt_per_second": 73.65042674756883, "predicted_n": 96, "predicted_ms": 5260.338, "predicted_per_token_ms": 55.37197894736842, "predicted_per_second": 18.05967601321436}}
+{"variant": "q4-default", "category": "performance", "rss_kib": 6442312, "memory_kib": {"Rss": 6442312, "Pss": 6438309, "Pss_Anon": 3760040, "Pss_File": 2678269, "VmHWM": 6442312}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 370.668, "prompt_per_token_ms": 14.256461538461538, "prompt_per_second": 70.14363257686124, "predicted_n": 96, "predicted_ms": 5294.226, "predicted_per_token_ms": 55.7286947368421, "predicted_per_second": 17.944077188997976}}
+{"variant": "q4-default", "category": "performance", "rss_kib": 6442316, "memory_kib": {"Rss": 6442316, "Pss": 6438313, "Pss_Anon": 3760044, "Pss_File": 2678269, "VmHWM": 6442316}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 403.06, "prompt_per_token_ms": 15.502307692307692, "prompt_per_second": 64.50652508311417, "predicted_n": 96, "predicted_ms": 5836.983, "predicted_per_token_ms": 61.44192631578947, "predicted_per_second": 16.27553138325056}}
+{"variant": "q4-no-repack", "category": "ready", "bytes": 2740937888, "memory_kib": {"Rss": 2856564, "Pss": 2852575, "Pss_Anon": 173504, "Pss_File": 2679071, "VmHWM": 2856564}}
+{"variant": "q4-no-repack", "category": "math", "prompt": "What is 17 times 19?", "expected": "323", "answer": "323"}
+{"variant": "q4-no-repack", "category": "math", "prompt": "What is 28 times 16?", "expected": "448", "answer": "448"}
+{"variant": "q4-no-repack", "category": "math", "prompt": "What is 144 divided by 12?", "expected": "12", "answer": "12"}
+{"variant": "q4-no-repack", "category": "math", "prompt": "What is 15 percent of 240?", "expected": "36", "answer": "36"}
+{"variant": "q4-no-repack", "category": "math", "prompt": "What is the next term in 2, 6, 18, 54?", "expected": "162", "answer": "162"}
+{"variant": "q4-no-repack", "category": "math", "prompt": "If x + 7 = 21, what is x?", "expected": "14", "answer": "14"}
+{"variant": "q4-no-repack", "category": "code", "prompt": "In Python, what does len([1, 2, 3]) return?", "expected": "3", "answer": "3"}
+{"variant": "q4-no-repack", "category": "code", "prompt": "In Python, what does 'abc'[::-1] return?", "expected": "cba", "answer": "cba"}
+{"variant": "q4-no-repack", "category": "code", "prompt": "In Python, what does sum(range(5)) return?", "expected": "10", "answer": "10"}
+{"variant": "q4-no-repack", "category": "code", "prompt": "In Python, what does sorted([3, 1, 2])[0] return?", "expected": "1", "answer": "1"}
+{"variant": "q4-no-repack", "category": "code", "prompt": "In JavaScript, what does typeof null return?", "expected": "object", "answer": "\"object\""}
+{"variant": "q4-no-repack", "category": "code", "prompt": "In Python, what does 17 % 5 return?", "expected": "2", "answer": "2"}
+{"variant": "q4-no-repack", "category": "facts", "prompt": "What is the capital of Kenya?", "expected": "Nairobi", "answer": "Nairobi"}
+{"variant": "q4-no-repack", "category": "facts", "prompt": "What is the chemical symbol for sodium?", "expected": "Na", "answer": "Na"}
+{"variant": "q4-no-repack", "category": "facts", "prompt": "What planet is closest to the Sun?", "expected": "Mercury", "answer": "Mercury"}
+{"variant": "q4-no-repack", "category": "facts", "prompt": "What organ pumps blood around the human body?", "expected": "heart", "answer": "Heart"}
+{"variant": "q4-no-repack", "category": "facts", "prompt": "What is the largest ocean on Earth?", "expected": "Pacific", "answer": "Pacific Ocean"}
+{"variant": "q4-no-repack", "category": "facts", "prompt": "What gas do plants absorb during photosynthesis?", "expected": "carbon dioxide", "answer": "Carbon dioxide"}
+{"variant": "q4-no-repack", "category": "multilingual", "prompt": "¿Cuál es la capital de Francia? Responde en español.", "expected": "París", "answer": "París"}
+{"variant": "q4-no-repack", "category": "multilingual", "prompt": "Wie heißt die Hauptstadt von Deutschland? Antworte auf Deutsch.", "expected": "Berlin", "answer": "Berlin"}
+{"variant": "q4-no-repack", "category": "multilingual", "prompt": "Qual è la capitale d'Italia? Rispondi in italiano.", "expected": "Roma", "answer": "Roma"}
+{"variant": "q4-no-repack", "category": "multilingual", "prompt": "भारत की राजधानी क्या है? हिंदी में उत्तर दें।", "expected": "नई दिल्ली", "answer": "नई दिल्ली"}
+{"variant": "q4-no-repack", "category": "multilingual", "prompt": "日本の首都はどこですか？日本語で答えてください。", "expected": "東京", "answer": "東京"}
+{"variant": "q4-no-repack", "category": "multilingual", "prompt": "Quelle est la capitale de la Belgique ? Réponds en français.", "expected": "Bruxelles", "answer": "Bruxelles"}
+{"variant": "q4-no-repack", "category": "performance", "rss_kib": 5007428, "memory_kib": {"Rss": 5007428, "Pss": 5003424, "Pss_Anon": 2324116, "Pss_File": 2679308, "VmHWM": 5007428}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 403.324, "prompt_per_token_ms": 15.512461538461539, "prompt_per_second": 64.4643016532614, "predicted_n": 96, "predicted_ms": 5430.307, "predicted_per_token_ms": 57.161126315789474, "predicted_per_second": 17.494406853977132}}
+{"variant": "q4-no-repack", "category": "performance", "rss_kib": 5114220, "memory_kib": {"Rss": 5114220, "Pss": 5110229, "Pss_Anon": 2430908, "Pss_File": 2679321, "VmHWM": 5114220}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 443.848, "prompt_per_token_ms": 17.071076923076923, "prompt_per_second": 58.57861249797228, "predicted_n": 96, "predicted_ms": 5061.784, "predicted_per_token_ms": 53.28193684210526, "predicted_per_second": 18.768086508630162}}
+{"variant": "q4-no-repack", "category": "performance", "rss_kib": 5114220, "memory_kib": {"Rss": 5114220, "Pss": 5110229, "Pss_Anon": 2430908, "Pss_File": 2679321, "VmHWM": 5114220}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 405.608, "prompt_per_token_ms": 15.600307692307693, "prompt_per_second": 64.10129977712471, "predicted_n": 96, "predicted_ms": 5028.341, "predicted_per_token_ms": 52.9299052631579, "predicted_per_second": 18.89291120073201}}
+{"variant": "q2-default", "category": "ready", "bytes": 1540093088, "memory_kib": {"Rss": 1683872, "Pss": 1679787, "Pss_Anon": 173508, "Pss_File": 1506279, "VmHWM": 1683872}}
+{"variant": "q2-default", "category": "math", "prompt": "What is 17 times 19?", "expected": "323", "answer": "综合改革义ếjoj上等รอยitorisEW忠oulosazioacas"}
+{"variant": "q2-default", "category": "math", "prompt": "What is 28 times 16?", "expected": "448", "answer": "管用转角ulate predicate� Barnettodat在有erotрутonyenser"}
+{"variant": "q2-default", "category": "math", "prompt": "What is 144 divided by 12?", "expected": "12", "answer": "chieowigit中国家�ableomb决yyyigent微何地"}
+{"variant": "q2-default", "category": "math", "prompt": "What is 15 percent of 240?", "expected": "36", "answer": "ngobelekutংশussinzinーズocabblick用地其自然apus"}
+{"variant": "q2-default", "category": "math", "prompt": "What is the next term in 2, 6, 18, 54?", "expected": "162", "answer": "法定izzi满目йоrauодноadó生ekl�agostrinsic"}
+{"variant": "q2-default", "category": "math", "prompt": "If x + 7 = 21, what is x?", "expected": "14", "answer": "ngo尾imers полhot permaníf委会澎ockenливarton"}
+{"variant": "q2-default", "category": "code", "prompt": "In Python, what does len([1, 2, 3]) return?", "expected": "3", "answer": "aktuorcaedium蝗�向社会ipplepirationankeradr Eppureyar"}
+{"variant": "q2-default", "category": "code", "prompt": "In Python, what does 'abc'[::-1] return?", "expected": "cba", "answer": "oczy管道的zerű其事시피dציםuggy scorsiisodes活lok"}
+{"variant": "q2-default", "category": "code", "prompt": "In Python, what does sum(range(5)) return?", "expected": "10", "answer": "ringerhibmot各行 dér배oporrapymithoferorumrekt"}
+{"variant": "q2-default", "category": "code", "prompt": "In Python, what does sorted([3, 1, 2])[0] return?", "expected": "1", "answer": "agliazenreatoraccioбяีย์amani säredoжеçais"}
+{"variant": "q2-default", "category": "code", "prompt": "In JavaScript, what does typeof null return?", "expected": "object", "answer": "ullipairfoy分摊 thangkishedwerken天王嗣lesslyibur"}
+{"variant": "q2-default", "category": "code", "prompt": "In Python, what does 17 % 5 return?", "expected": "2", "answer": "为核心的党中央landeramasdjeiges典型的宽irschicali Apare适时rams"}
+{"variant": "q2-default", "category": "facts", "prompt": "What is the capital of Kenya?", "expected": "Nairobi", "answer": "ayersachrcontinent富 fasurisplikترین专户uidaادمumann"}
+{"variant": "q2-default", "category": "facts", "prompt": "What is the chemical symbol for sodium?", "expected": "Na", "answer": "cốcču.en随手akteelligkiruct百倍固اء精"}
+{"variant": "q2-default", "category": "facts", "prompt": "What planet is closest to the Sun?", "expected": "Mercury", "answer": "esserabethlemantingsüleDRibaragneintahilityarly旭日"}
+{"variant": "q2-default", "category": "facts", "prompt": "What organ pumps blood around the human body?", "expected": "heart", "answer": "urryadia使用时间oughtyc显示的yg心力 ха Beer Clos conseg"}
+{"variant": "q2-default", "category": "facts", "prompt": "What is the largest ocean on Earth?", "expected": "Pacific", "answer": "jayottesuhkanverst据报道ófương Dynamubberalenie musunate"}
+{"variant": "q2-default", "category": "facts", "prompt": "What gas do plants absorb during photosynthesis?", "expected": "carbon dioxide", "answer": "alentenjunolochื่อนliestnnacakanalezoresjárleit"}
+{"variant": "q2-default", "category": "multilingual", "prompt": "¿Cuál es la capital de Francia? Responde en español.", "expected": "París", "answer": "人一ивиhaal recuperooglioanschlokucaslihatkanlags黏枝花"}
+{"variant": "q2-default", "category": "multilingual", "prompt": "Wie heißt die Hauptstadt von Deutschland? Antworte auf Deutsch.", "expected": "Berlin", "answer": "ibold私人棒elsonalousသာ Halfبان况两头emy leo"}
+{"variant": "q2-default", "category": "multilingual", "prompt": "Qual è la capitale d'Italia? Rispondi in italiano.", "expected": "Roma", "answer": "有效率再用研究会marshallpecemerissimiaffandon stilUniversalهی"}
+{"variant": "q2-default", "category": "multilingual", "prompt": "भारत की राजधानी क्या है? हिंदी में उत्तर दें।", "expected": "नई दिल्ली", "answer": "bieinyuzziםystone�fel引导下abyrin符энperation"}
+{"variant": "q2-default", "category": "multilingual", "prompt": "日本の首都はどこですか？日本語で答えてください。", "expected": "東京", "answer": "급개m复于事oscoperstandrokajakanCarecko قط"}
+{"variant": "q2-default", "category": "multilingual", "prompt": "Quelle est la capitale de la Belgique ? Réponds en français.", "expected": "Bruxelles", "answer": "rint形象strap bundled佛寺�:flex媲ehnotic kutбо"}
+{"variant": "q2-default", "category": "performance", "rss_kib": 3840532, "memory_kib": {"Rss": 3840532, "Pss": 3836550, "Pss_Anon": 2329996, "Pss_File": 1506554, "VmHWM": 3840532}, "bytes": 1540093088, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 841.622, "prompt_per_token_ms": 32.37007692307692, "prompt_per_second": 30.892728564605015, "predicted_n": 96, "predicted_ms": 5510.305, "predicted_per_token_ms": 58.00321052631579, "predicted_per_second": 17.2404249855498}}
+{"variant": "q2-default", "category": "performance", "rss_kib": 3947324, "memory_kib": {"Rss": 3947324, "Pss": 3943310, "Pss_Anon": 2436788, "Pss_File": 1506522, "VmHWM": 3947324}, "bytes": 1540093088, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 844.021, "prompt_per_token_ms": 32.462346153846156, "prompt_per_second": 30.80492073064533, "predicted_n": 96, "predicted_ms": 5275.815, "predicted_per_token_ms": 55.5348947368421, "predicted_per_second": 18.006696595691853}}
+{"variant": "q2-default", "category": "performance", "rss_kib": 3947328, "memory_kib": {"Rss": 3947328, "Pss": 3943346, "Pss_Anon": 2436792, "Pss_File": 1506554, "VmHWM": 3947328}, "bytes": 1540093088, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 797.177, "prompt_per_token_ms": 30.660653846153846, "prompt_per_second": 32.615090500604005, "predicted_n": 96, "predicted_ms": 5058.095, "predicted_per_token_ms": 53.2431052631579, "predicted_per_second": 18.781774561371424}}
+{"variant": "q2-no-repack", "category": "ready", "bytes": 1540093088, "memory_kib": {"Rss": 1683764, "Pss": 1679782, "Pss_Anon": 173504, "Pss_File": 1506278, "VmHWM": 1683764}}
+{"variant": "q2-no-repack", "category": "math", "prompt": "What is 17 times 19?", "expected": "323", "answer": "综合改革义ếjoj上等รอยitorisEW忠oulosazioacas"}
+{"variant": "q2-no-repack", "category": "math", "prompt": "What is 28 times 16?", "expected": "448", "answer": "管用转角ulate predicate� Barnettodat在有erotрутonyenser"}
+{"variant": "q2-no-repack", "category": "math", "prompt": "What is 144 divided by 12?", "expected": "12", "answer": "chieowigit中国家�ableomb决yyyigent微何地"}
+{"variant": "q2-no-repack", "category": "math", "prompt": "What is 15 percent of 240?", "expected": "36", "answer": "ngobelekutংশussinzinーズocabblick用地其自然apus"}
+{"variant": "q2-no-repack", "category": "math", "prompt": "What is the next term in 2, 6, 18, 54?", "expected": "162", "answer": "法定izzi满目йоrauодноadó生ekl�agostrinsic"}
+{"variant": "q2-no-repack", "category": "math", "prompt": "If x + 7 = 21, what is x?", "expected": "14", "answer": "ngo尾imers полhot permaníf委会澎ockenливarton"}
+{"variant": "q2-no-repack", "category": "code", "prompt": "In Python, what does len([1, 2, 3]) return?", "expected": "3", "answer": "aktuorcaedium蝗�向社会ipplepirationankeradr Eppureyar"}
+{"variant": "q2-no-repack", "category": "code", "prompt": "In Python, what does 'abc'[::-1] return?", "expected": "cba", "answer": "oczy管道的zerű其事시피dציםuggy scorsiisodes活lok"}
+{"variant": "q2-no-repack", "category": "code", "prompt": "In Python, what does sum(range(5)) return?", "expected": "10", "answer": "ringerhibmot各行 dér배oporrapymithoferorumrekt"}
+{"variant": "q2-no-repack", "category": "code", "prompt": "In Python, what does sorted([3, 1, 2])[0] return?", "expected": "1", "answer": "agliazenreatoraccioбяีย์amani säredoжеçais"}
+{"variant": "q2-no-repack", "category": "code", "prompt": "In JavaScript, what does typeof null return?", "expected": "object", "answer": "ullipairfoy分摊 thangkishedwerken天王嗣lesslyibur"}
+{"variant": "q2-no-repack", "category": "code", "prompt": "In Python, what does 17 % 5 return?", "expected": "2", "answer": "为核心的党中央landeramasdjeiges典型的宽irschicali Apare适时rams"}
+{"variant": "q2-no-repack", "category": "facts", "prompt": "What is the capital of Kenya?", "expected": "Nairobi", "answer": "ayersachrcontinent富 fasurisplikترین专户uidaادمumann"}
+{"variant": "q2-no-repack", "category": "facts", "prompt": "What is the chemical symbol for sodium?", "expected": "Na", "answer": "cốcču.en随手akteelligkiruct百倍固اء精"}
+{"variant": "q2-no-repack", "category": "facts", "prompt": "What planet is closest to the Sun?", "expected": "Mercury", "answer": "esserabethlemantingsüleDRibaragneintahilityarly旭日"}
+{"variant": "q2-no-repack", "category": "facts", "prompt": "What organ pumps blood around the human body?", "expected": "heart", "answer": "urryadia使用时间oughtyc显示的yg心力 ха Beer Clos conseg"}
+{"variant": "q2-no-repack", "category": "facts", "prompt": "What is the largest ocean on Earth?", "expected": "Pacific", "answer": "jayottesuhkanverst据报道ófương Dynamubberalenie musunate"}
+{"variant": "q2-no-repack", "category": "facts", "prompt": "What gas do plants absorb during photosynthesis?", "expected": "carbon dioxide", "answer": "alentenjunolochื่อนliestnnacakanalezoresjárleit"}
+{"variant": "q2-no-repack", "category": "multilingual", "prompt": "¿Cuál es la capital de Francia? Responde en español.", "expected": "París", "answer": "人一ивиhaal recuperooglioanschlokucaslihatkanlags黏枝花"}
+{"variant": "q2-no-repack", "category": "multilingual", "prompt": "Wie heißt die Hauptstadt von Deutschland? Antworte auf Deutsch.", "expected": "Berlin", "answer": "ibold私人棒elsonalousသာ Halfبان况两头emy leo"}
+{"variant": "q2-no-repack", "category": "multilingual", "prompt": "Qual è la capitale d'Italia? Rispondi in italiano.", "expected": "Roma", "answer": "有效率再用研究会marshallpecemerissimiaffandon stilUniversalهی"}
+{"variant": "q2-no-repack", "category": "multilingual", "prompt": "भारत की राजधानी क्या है? हिंदी में उत्तर दें।", "expected": "नई दिल्ली", "answer": "bieinyuzziםystone�fel引导下abyrin符энperation"}
+{"variant": "q2-no-repack", "category": "multilingual", "prompt": "日本の首都はどこですか？日本語で答えてください。", "expected": "東京", "answer": "급개m复于事oscoperstandrokajakanCarecko قط"}
+{"variant": "q2-no-repack", "category": "multilingual", "prompt": "Quelle est la capitale de la Belgique ? Réponds en français.", "expected": "Bruxelles", "answer": "rint形象strap bundled佛寺�:flex媲ehnotic kutбо"}
+{"variant": "q2-no-repack", "category": "performance", "rss_kib": 3840424, "memory_kib": {"Rss": 3840424, "Pss": 3836227, "Pss_Anon": 2329992, "Pss_File": 1506235, "VmHWM": 3840424}, "bytes": 1540093088, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 814.581, "prompt_per_token_ms": 31.33003846153846, "prompt_per_second": 31.91824999601022, "predicted_n": 96, "predicted_ms": 5343.797, "predicted_per_token_ms": 56.2504947368421, "predicted_per_second": 17.77762141787946}}
+{"variant": "q2-no-repack", "category": "performance", "rss_kib": 3947220, "memory_kib": {"Rss": 3947220, "Pss": 3943023, "Pss_Anon": 2436788, "Pss_File": 1506235, "VmHWM": 3947220}, "bytes": 1540093088, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 829.748, "prompt_per_token_ms": 31.91338461538462, "prompt_per_second": 31.33481490765871, "predicted_n": 96, "predicted_ms": 5268.155, "predicted_per_token_ms": 55.45426315789474, "predicted_per_second": 18.032878683334108}}
+{"variant": "q2-no-repack", "category": "performance", "rss_kib": 3947232, "memory_kib": {"Rss": 3947232, "Pss": 3942936, "Pss_Anon": 2436800, "Pss_File": 1506136, "VmHWM": 3947232}, "bytes": 1540093088, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 794.883, "prompt_per_token_ms": 30.57242307692308, "prompt_per_second": 32.70921632491826, "predicted_n": 96, "predicted_ms": 5226.138, "predicted_per_token_ms": 55.01197894736842, "predicted_per_second": 18.177859061509665}}

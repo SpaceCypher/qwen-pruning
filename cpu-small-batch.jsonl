@@ -1,0 +1,28 @@
+{"variant": "q4-low-batch", "category": "ready", "bytes": 2740937888, "memory_kib": {"Rss": 2854220, "Pss": 2850020, "Pss_Anon": 171228, "Pss_File": 2678792, "VmHWM": 2854220}}
+{"variant": "q4-low-batch", "category": "math", "prompt": "What is 17 times 19?", "expected": "323", "answer": "323"}
+{"variant": "q4-low-batch", "category": "math", "prompt": "What is 28 times 16?", "expected": "448", "answer": "448"}
+{"variant": "q4-low-batch", "category": "math", "prompt": "What is 144 divided by 12?", "expected": "12", "answer": "12"}
+{"variant": "q4-low-batch", "category": "math", "prompt": "What is 15 percent of 240?", "expected": "36", "answer": "36"}
+{"variant": "q4-low-batch", "category": "math", "prompt": "What is the next term in 2, 6, 18, 54?", "expected": "162", "answer": "162"}
+{"variant": "q4-low-batch", "category": "math", "prompt": "If x + 7 = 21, what is x?", "expected": "14", "answer": "14"}
+{"variant": "q4-low-batch", "category": "code", "prompt": "In Python, what does len([1, 2, 3]) return?", "expected": "3", "answer": "3"}
+{"variant": "q4-low-batch", "category": "code", "prompt": "In Python, what does 'abc'[::-1] return?", "expected": "cba", "answer": "cba"}
+{"variant": "q4-low-batch", "category": "code", "prompt": "In Python, what does sum(range(5)) return?", "expected": "10", "answer": "10"}
+{"variant": "q4-low-batch", "category": "code", "prompt": "In Python, what does sorted([3, 1, 2])[0] return?", "expected": "1", "answer": "1"}
+{"variant": "q4-low-batch", "category": "code", "prompt": "In JavaScript, what does typeof null return?", "expected": "object", "answer": "\"object\""}
+{"variant": "q4-low-batch", "category": "code", "prompt": "In Python, what does 17 % 5 return?", "expected": "2", "answer": "2"}
+{"variant": "q4-low-batch", "category": "facts", "prompt": "What is the capital of Kenya?", "expected": "Nairobi", "answer": "Nairobi"}
+{"variant": "q4-low-batch", "category": "facts", "prompt": "What is the chemical symbol for sodium?", "expected": "Na", "answer": "Na"}
+{"variant": "q4-low-batch", "category": "facts", "prompt": "What planet is closest to the Sun?", "expected": "Mercury", "answer": "Mercury"}
+{"variant": "q4-low-batch", "category": "facts", "prompt": "What organ pumps blood around the human body?", "expected": "heart", "answer": "Heart"}
+{"variant": "q4-low-batch", "category": "facts", "prompt": "What is the largest ocean on Earth?", "expected": "Pacific", "answer": "Pacific Ocean"}
+{"variant": "q4-low-batch", "category": "facts", "prompt": "What gas do plants absorb during photosynthesis?", "expected": "carbon dioxide", "answer": "Carbon dioxide"}
+{"variant": "q4-low-batch", "category": "multilingual", "prompt": "¿Cuál es la capital de Francia? Responde en español.", "expected": "París", "answer": "París"}
+{"variant": "q4-low-batch", "category": "multilingual", "prompt": "Wie heißt die Hauptstadt von Deutschland? Antworte auf Deutsch.", "expected": "Berlin", "answer": "Berlin"}
+{"variant": "q4-low-batch", "category": "multilingual", "prompt": "Qual è la capitale d'Italia? Rispondi in italiano.", "expected": "Roma", "answer": "Roma"}
+{"variant": "q4-low-batch", "category": "multilingual", "prompt": "भारत की राजधानी क्या है? हिंदी में उत्तर दें।", "expected": "नई दिल्ली", "answer": "नई दिल्ली"}
+{"variant": "q4-low-batch", "category": "multilingual", "prompt": "日本の首都はどこですか？日本語で答えてください。", "expected": "東京", "answer": "東京"}
+{"variant": "q4-low-batch", "category": "multilingual", "prompt": "Quelle est la capitale de la Belgique ? Réponds en français.", "expected": "Bruxelles", "answer": "Bruxelles"}
+{"variant": "q4-low-batch", "category": "performance", "rss_kib": 5100340, "memory_kib": {"Rss": 5100340, "Pss": 5096110, "Pss_Anon": 2417112, "Pss_File": 2678998, "VmHWM": 5100340}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 421.511, "prompt_per_token_ms": 16.21196153846154, "prompt_per_second": 61.682850506866956, "predicted_n": 96, "predicted_ms": 5122.45, "predicted_per_token_ms": 53.92052631578947, "predicted_per_second": 18.545813038682663}}
+{"variant": "q4-low-batch", "category": "performance", "rss_kib": 5207132, "memory_kib": {"Rss": 5207132, "Pss": 5202901, "Pss_Anon": 2523904, "Pss_File": 2678997, "VmHWM": 5207132}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 434.873, "prompt_per_token_ms": 16.725884615384615, "prompt_per_second": 59.78757016416287, "predicted_n": 96, "predicted_ms": 5177.713, "predicted_per_token_ms": 54.50224210526316, "predicted_per_second": 18.347869030206965}}
+{"variant": "q4-low-batch", "category": "performance", "rss_kib": 5207140, "memory_kib": {"Rss": 5207140, "Pss": 5202940, "Pss_Anon": 2523912, "Pss_File": 2679028, "VmHWM": 5207140}, "bytes": 2740937888, "timings": {"cache_n": 0, "prompt_n": 26, "prompt_ms": 425.993, "prompt_per_token_ms": 16.384346153846153, "prompt_per_second": 61.03386675367905, "predicted_n": 96, "predicted_ms": 5124.774, "predicted_per_token_ms": 53.94498947368422, "predicted_per_second": 18.537402820104848}}
